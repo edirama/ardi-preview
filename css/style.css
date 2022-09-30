@@ -285,6 +285,28 @@
   }
 }
 
+@media screen and (max-width: 426px) {
+  .section__intro .chevron-down {
+    right: 59%;
+  }
+
+  .section__intro .fa-cube.cube1 {
+    left: 23.8%;
+  }
+
+  .section__intro .fa-cube.cube2 {
+    top: 30.5%;
+  }
+
+  .section__intro .fa-cube.cube3 {
+    right: 23.8%;
+  }
+
+  .section__intro h1 {
+    font-size: 3rem;
+  }
+}
+
 /* Section Services */
 .service {
   display: flex;
@@ -898,7 +920,7 @@ footer .social__medias .social__media--wp {
   }
 }
 
-@media screen and (max-width: 828px) {
+@media screen and (max-width: 426px) {
   footer {
     flex-direction: column;
     height: 200px;
