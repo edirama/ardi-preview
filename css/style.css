@@ -285,21 +285,21 @@
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 416px) {
   .section__intro .chevron-down {
-    right: 59%;
+    right: 59.5%;
   }
 
   .section__intro .fa-cube.cube1 {
-    left: 23.8%;
+    left: 23.1%;
   }
 
   .section__intro .fa-cube.cube2 {
-    top: 30.5%;
+    top: 30%;
   }
 
   .section__intro .fa-cube.cube3 {
-    right: 23.8%;
+    right: 23.1%;
   }
 
   .section__intro h1 {
@@ -404,7 +404,6 @@
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  /* padding-top: 80px; */
   margin-top: 200px;
   position: relative;
 }
@@ -453,7 +452,7 @@
   color: var(--color-primary);
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 416px) {
   .aboutus .aboutus__content {
     width: 100%;
   }
@@ -698,7 +697,7 @@
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 416px) {
   .projects h1 {
     font-size: 2rem;
   }
@@ -920,7 +919,7 @@ footer .social__medias .social__media--wp {
   }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 416px) {
   footer {
     flex-direction: column;
     height: 200px;
