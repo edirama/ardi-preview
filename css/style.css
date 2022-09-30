@@ -898,7 +898,7 @@ footer .social__medias .social__media--wp {
   }
 }
 
-@media screen and (max-width: 413px) {
+@media screen and (max-width: 828px) {
   footer {
     flex-direction: column;
     height: 200px;
