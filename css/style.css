@@ -329,6 +329,28 @@
   }
 }
 
+@media screen and (max-width: 360px) {
+  .section__intro .chevron-down {
+    right: 59.5%;
+  }
+
+  .section__intro .fa-cube.cube1 {
+    left: 19%;
+  }
+
+  .section__intro .fa-cube.cube2 {
+    top: 27.2%;
+  }
+
+  .section__intro .fa-cube.cube3 {
+    right: 19%;
+  }
+
+  .section__intro h1 {
+    font-size: 3rem;
+  }
+}
+
 /* Section Services */
 .service {
   display: flex;
