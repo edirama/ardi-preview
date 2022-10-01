@@ -329,7 +329,7 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 361px) {
   .section__intro .chevron-down {
     right: 59.5%;
   }
