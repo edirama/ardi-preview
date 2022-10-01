@@ -93,10 +93,6 @@ const subject = document.getElementById("subject");
 const message = document.getElementById("message");
 const contactMessage = document.getElementById("contact--message");
 
-const timeOut = setTimeout(() => {
-  contactMessage.textContent = "";
-}, 5000);
-
 const sendEmail = function (e) {
   e.preventDefault();
 
@@ -118,7 +114,9 @@ const sendEmail = function (e) {
 
     contactMessage.textContent = "Ju lutem plotësoni të gjitha fushat 📩";
 
-    timeOut;
+    setTimeout(() => {
+      contactMessage.textContent = "";
+    }, 5000);
   } else {
     // serviceID - templateID - #form - publicKey
     emailjs
@@ -134,7 +132,9 @@ const sendEmail = function (e) {
           contactMessage.classList.add("color-blue");
           contactMessage.textContent = "U dërgua ✅";
 
-          timeOut;
+          setTimeout(() => {
+            contactMessage.textContent = "";
+          }, 5000);
         },
         () => {
           contactMessage.classList.remove("normal-color");
@@ -142,7 +142,9 @@ const sendEmail = function (e) {
           contactMessage.textContent =
             "Mesazhi nuk u dërgua, probleme me serverin ❌";
 
-          timeOut;
+          setTimeout(() => {
+            contactMessage.textContent = "";
+          }, 5000);
         }
       );
     fName.value = "";
