@@ -182,12 +182,17 @@
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
   padding: 100px;
+}
+
+.section__intro .bck__img {
+  display: none;
 }
 
 .section__intro::before {
@@ -260,6 +265,12 @@
 
   .section__intro .fa-cube.cube3 {
     right: 35.4%;
+  }
+
+  .section__intro .bck__img {
+    display: block;
+    height: 100%;
+    position: absolute;
   }
 }
 

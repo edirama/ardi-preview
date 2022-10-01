@@ -14,6 +14,7 @@ navbarItems.forEach((navbarItem) =>
 );
 
 // Section Intro
+const sectionIntroBck = document.querySelector(".bck__img");
 const chevronDown = document.querySelector(".chevron-down");
 const cube1 = document.querySelector(".cube1");
 const cube2 = document.querySelector(".cube2");
@@ -23,6 +24,7 @@ const sectionIntroText = document.querySelector(".section__intro--text");
 window.addEventListener("scroll", function () {
   const value = window.scrollY;
 
+  sectionIntroBck.style.marginTop = value * 2 + "px";
   chevronDown.style.marginTop = value * 0.88 + "px";
   cube1.style.marginLeft = -value * 1 + "px";
   cube2.style.marginTop = -value * 1 + "px";
