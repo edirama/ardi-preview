@@ -83,3 +83,48 @@ modalCopyBtn.addEventListener("click", function () {
     copy.classList.replace("fa-check", "fa-copy");
   }, 1000);
 });
+
+// Send email
+const contactForm = document.getElementById("contact__form");
+const fName = document.getElementById("fName");
+const lName = document.getElementById("lName");
+const email = document.getElementById("email");
+const subject = document.getElementById("subject");
+const message = document.getElementById("message");
+const contactMessage = document.getElementById("contact--message");
+
+const sendEmail = function (e) {
+  e.preventDefault();
+
+  if (
+    fName.value === "" ||
+    lName.value === "" ||
+    email.value === "" ||
+    subject.value === "" ||
+    message.value === ""
+  ) {
+    contactMessage.classList.remove("color-blue");
+    contactMessage.classList.add("color-red");
+
+    contactMessage.textContent = "Ju lutem plotësoni të gjitha fushat 📩";
+  } else {
+    // serviceID - templateID - #form - publicKey
+    emailjs
+      .sendForm(
+        "service_o6gg2zs",
+        "template_ma6eeco",
+        "#contact__form",
+        "LVLAvkijYcat08N3a"
+      )
+      .then(() => {
+        contactMessage.classList.add("color-blue");
+        contactMessage.textContent = "U dërgua ✅";
+
+        setTimeout(() => {
+          contactMessage.textContent = "";
+        }, 5000);
+      });
+  }
+};
+
+contactForm.addEventListener("submit", sendEmail);

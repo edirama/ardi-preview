@@ -817,6 +817,14 @@
   color: var(--color-primary);
 }
 
+.color-red {
+  color: red;
+}
+
+.color-blue {
+  color: blue;
+}
+
 .contact .contact__content .contact__address {
   display: flex;
   flex-direction: column;
