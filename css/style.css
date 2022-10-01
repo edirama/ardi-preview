@@ -291,7 +291,7 @@
   }
 
   .section__intro .fa-cube.cube1 {
-    left: 22%;
+    left: 21%;
   }
 
   .section__intro .fa-cube.cube2 {
@@ -329,7 +329,7 @@
   }
 }
 
-@media screen and (max-width: 361px) {
+@media screen and (max-width: 371px) {
   .section__intro .chevron-down {
     right: 59.5%;
   }
