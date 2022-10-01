@@ -96,6 +96,12 @@ const contactMessage = document.getElementById("contact--message");
 const sendEmail = function (e) {
   e.preventDefault();
 
+  contactMessage.classList.remove("color-red");
+  contactMessage.classList.remove("color-blue");
+  contactMessage.classList.add("normal-color");
+  contactMessage.innerHTML =
+    "Mesazhi ëshë duke u dërguar <i class='fa-solid fa-spinner'></i>";
+
   if (
     fName.value === "" ||
     lName.value === "" ||
@@ -103,7 +109,7 @@ const sendEmail = function (e) {
     subject.value === "" ||
     message.value === ""
   ) {
-    contactMessage.classList.remove("color-blue");
+    contactMessage.classList.remove("normal-color");
     contactMessage.classList.add("color-red");
 
     contactMessage.textContent = "Ju lutem plotësoni të gjitha fushat 📩";
@@ -116,14 +122,32 @@ const sendEmail = function (e) {
         "#contact__form",
         "LVLAvkijYcat08N3a"
       )
-      .then(() => {
-        contactMessage.classList.add("color-blue");
-        contactMessage.textContent = "U dërgua ✅";
+      .then(
+        () => {
+          contactMessage.classList.remove("normal-color");
+          contactMessage.classList.add("color-blue");
+          contactMessage.textContent = "U dërgua ✅";
 
-        setTimeout(() => {
-          contactMessage.textContent = "";
-        }, 5000);
-      });
+          setTimeout(() => {
+            contactMessage.textContent = "";
+          }, 5000);
+        },
+        () => {
+          contactMessage.classList.remove("normal-color");
+          contactMessage.classList.add("color-red");
+          contactMessage.textContent =
+            "Mesazhi nuk u dërgua, probleme me serverin ❌";
+
+          setTimeout(() => {
+            contactMessage.textContent = "";
+          }, 5000);
+        }
+      );
+    fName.value = "";
+    lName.value = "";
+    email.value = "";
+    subject.value = "";
+    message.value = "";
   }
 };
 

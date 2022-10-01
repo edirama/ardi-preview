@@ -825,6 +825,24 @@
   color: blue;
 }
 
+.normal-color {
+  color: var(--color-primary);
+}
+
+.fa-spinner {
+  animation: spinner 5s;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(365deg);
+  }
+}
+
 .contact .contact__content .contact__address {
   display: flex;
   flex-direction: column;

@@ -166,12 +166,7 @@
     <section class="contact" id="contact">
       <h1>KONTAKTI</h1>
       <div class="contact__content">
-        <form
-          action="https://formspree.io/f/maykoapz"
-          method="POST"
-          id="contact__form"
-          class="contact__form"
-        >
+        <form id="contact__form" class="contact__form" method="POST">
           <h2>Na Kontaktoni</h2>
           <p class="contact__form--error"></p>
           <label for="fName">Emri *</label>
@@ -187,7 +182,12 @@
 
           <p class="contact__message" id="contact--message"></p>
 
-          <button type="submit" name="submit" class="contact__form--submit">
+          <button
+            type="submit"
+            name="submit"
+            class="contact__form--submit"
+            id=""
+          >
             Dërgoni
           </button>
         </form>
