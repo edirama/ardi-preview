@@ -291,15 +291,37 @@
   }
 
   .section__intro .fa-cube.cube1 {
-    left: 23.1%;
+    left: 22%;
   }
 
   .section__intro .fa-cube.cube2 {
-    top: 30%;
+    top: 32%;
   }
 
   .section__intro .fa-cube.cube3 {
-    right: 23.1%;
+    right: 22%;
+  }
+
+  .section__intro h1 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .section__intro .chevron-down {
+    right: 59.5%;
+  }
+
+  .section__intro .fa-cube.cube1 {
+    left: 24.1%;
+  }
+
+  .section__intro .fa-cube.cube2 {
+    top: 28%;
+  }
+
+  .section__intro .fa-cube.cube3 {
+    right: 24.1%;
   }
 
   .section__intro h1 {
@@ -452,7 +474,7 @@
   color: var(--color-primary);
 }
 
-@media screen and (max-width: 416px) {
+@media screen and (max-width: 431px) {
   .aboutus .aboutus__content {
     width: 100%;
   }
@@ -697,7 +719,7 @@
   }
 }
 
-@media screen and (max-width: 416px) {
+@media screen and (max-width: 431px) {
   .projects h1 {
     font-size: 2rem;
   }
@@ -945,7 +967,7 @@ footer .social__medias .social__media--wp {
   }
 }
 
-@media screen and (max-width: 416px) {
+@media screen and (max-width: 431px) {
   footer {
     flex-direction: column;
     height: 200px;
