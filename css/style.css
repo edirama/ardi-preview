@@ -830,7 +830,7 @@
 }
 
 .fa-spinner {
-  animation: spinner 5s;
+  animation: spinner 4s infinite;
 }
 
 @keyframes spinner {
