@@ -1024,7 +1024,7 @@ footer .social__medias .social__media--wp {
   position: fixed;
   bottom: 50px;
   right: 0;
-  z-index: 10000;
+  z-index: 98;
   transition: all 0.5s;
 }
 
