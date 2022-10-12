@@ -1019,3 +1019,23 @@ footer .social__medias .social__media--wp {
     margin-left: 0;
   }
 }
+
+.scroll__top {
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  z-index: 10000;
+}
+
+.scroll__top a {
+  width: 50px;
+  height: 40px;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  border-radius: 4px 0 0 4px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
