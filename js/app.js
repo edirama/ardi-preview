@@ -21,6 +21,9 @@ const cube2 = document.querySelector(".cube2");
 const cube3 = document.querySelector(".cube3");
 const sectionIntroText = document.querySelector(".section__intro--text");
 
+// Scroll Top btn
+const scrollTop = document.querySelector(".scroll__top");
+
 window.addEventListener("scroll", function () {
   const value = window.scrollY;
 
@@ -30,6 +33,13 @@ window.addEventListener("scroll", function () {
   cube2.style.marginTop = -value * 1 + "px";
   cube3.style.marginRight = -value * 1 + "px";
   sectionIntroText.style.marginBottom = value * 1.5 + "px";
+
+  // Scroll Top btn
+  if (value > 600) {
+    scrollTop.classList.remove("hidden");
+  } else {
+    scrollTop.classList.add("hidden");
+  }
 });
 
 // Projects
