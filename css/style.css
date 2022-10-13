@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 :root {
   --color-primary: rgb(30, 45, 59);
   --color-secondary: rgb(237, 205, 31);
@@ -1070,7 +1074,6 @@ footer .social__medias .social__media--wp {
 /* Fade in */
 .section {
   transition: 1s;
-  outline: hidden;
 }
 
 .section--hidden {
