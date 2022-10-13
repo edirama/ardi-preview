@@ -566,7 +566,6 @@
 
 .projects .projects__content .project1 {
   background-image: url("../img/prj1.png");
-  /* margin-bottom: 10px; */
 }
 
 .projects .projects__content .project2 {
@@ -579,7 +578,6 @@
 
 .projects .projects__content .project4 {
   background-image: url("../img/prj4.png");
-  /* margin-top: 10px; */
 }
 
 @keyframes zoom {
@@ -592,8 +590,7 @@
 }
 
 .projects .projects__content .project {
-  width: 450px;
-  height: 450px;
+  width: 45%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -743,6 +740,10 @@
 }
 
 @media screen and (max-width: 960px) {
+  .projects .projects__content .project {
+    width: 100%;
+  }
+
   .projects .projects__content .project p i {
     font-size: 1.6rem;
   }
@@ -1039,4 +1040,29 @@ footer .social__medias .social__media--wp {
   align-items: center;
   justify-content: center;
   text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-primary) 50%,
+    var(--color-secondary) 50%
+  );
+}
+
+::-webkit-scrollbar-button {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    to top,
+    var(--color-primary),
+    var(--color-secondary)
+  );
 }
