@@ -616,7 +616,7 @@
   cursor: pointer;
 }
 
-.projects .projects__content .project p:hover {
+.projects .projects__content .project:hover p {
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.3);
 }
