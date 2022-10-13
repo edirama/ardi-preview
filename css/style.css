@@ -606,7 +606,7 @@
 }
 
 .projects .projects__content .project p {
-  opacity: 0;
+  opacity: 0.5;
   color: var(--color-primary);
   padding: 50% 25%;
   transition: all 0.7s;
