@@ -168,3 +168,37 @@ const sendEmail = function (e) {
 };
 
 contactForm.addEventListener("submit", sendEmail);
+
+// Fade in
+const allSections = document.querySelectorAll(".section");
+const allSectionsLeft = document.querySelectorAll(".section-left");
+const allSectionsRight = document.querySelectorAll(".section-right");
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("section--hidden");
+  entry.target.classList.remove("section--hidden-left");
+  entry.target.classList.remove("section--hidden-right");
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.25,
+});
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
+});
+
+allSectionsLeft.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden-left");
+});
+
+allSectionsRight.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden-right");
+});
