@@ -172,7 +172,6 @@ contactForm.addEventListener("submit", sendEmail);
 // Fade in
 const allSections = document.querySelectorAll(".section");
 const allSectionsLeft = document.querySelectorAll(".section-left");
-const allSectionsRight = document.querySelectorAll(".section-right");
 
 const revealSection = function (entries, observer) {
   const [entry] = entries;
@@ -180,7 +179,6 @@ const revealSection = function (entries, observer) {
   if (!entry.isIntersecting) return;
   entry.target.classList.remove("section--hidden");
   entry.target.classList.remove("section--hidden-left");
-  entry.target.classList.remove("section--hidden-right");
   observer.unobserve(entry.target);
 };
 
@@ -196,9 +194,4 @@ allSections.forEach(function (section) {
 allSectionsLeft.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section--hidden-left");
-});
-
-allSectionsRight.forEach(function (section) {
-  sectionObserver.observe(section);
-  section.classList.add("section--hidden-right");
 });

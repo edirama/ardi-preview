@@ -741,6 +741,7 @@ body {
 .hidden {
   visibility: hidden;
   opacity: 0;
+  /* display: none; */
 }
 
 @media screen and (max-width: 960px) {
@@ -969,13 +970,14 @@ footer .copy {
 }
 
 footer .social__medias {
-  width: 50%;
+  width: 30%;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 footer .social__medias .social__media {
-  margin-left: 50px;
+  /* margin-left: 50px; */
   font-size: 1.4rem;
   width: 50px;
   text-align: center;
@@ -987,7 +989,7 @@ footer .social__medias .social__media:hover {
 }
 
 footer .social__medias .social__media--fb {
-  margin-left: 200px;
+  /* margin-left: 200px; */
   color: blue;
 }
 
@@ -1017,11 +1019,11 @@ footer .social__medias .social__media--wp {
 
   footer .social__medias {
     width: 100%;
-    justify-content: space-around;
+    /* justify-content: space-around; */
   }
 
   footer .social__medias .social__media {
-    margin-left: 0;
+    /* margin-left: 0; */
   }
 }
 
@@ -1084,9 +1086,4 @@ footer .social__medias .social__media--wp {
 .section--hidden-left {
   opacity: 0;
   transform: translateX(-8rem);
-}
-
-.section--hidden-right {
-  opacity: 0;
-  transform: translateX(8rem);
 }
